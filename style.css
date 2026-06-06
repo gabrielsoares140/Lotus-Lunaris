@@ -527,3 +527,44 @@ body{
     box-shadow:
     0 0 15px rgba(125,90,255,.7);
 }
+
+.subpastas{
+
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.subpasta-card{
+
+    padding:20px 30px;
+
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    border:
+    1px solid rgba(255,255,255,.1);
+}
+
+.subpasta-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 20px rgba(125,90,255,.7);
+}
+
+.subperfil{
+
+    display:none;
+
+    animation:surgir .5s ease;
+}

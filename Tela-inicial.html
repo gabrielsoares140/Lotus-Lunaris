@@ -279,56 +279,146 @@
                         <h1>Ovelha</h1>
 
                         <p>
-                            A Alma Tranquila
+                            Fragmentada entre Obsessão e Desejo
                         </p>
 
                     </div>
 
                 </div>
 
-                <div class="info-grid">
+                <div class="subpastas">
 
-                    <div class="info-card">
+                    <div class="subpasta-card"
+                    onclick="abrirSubpasta('obsessao')">
 
-                        <h3>Nome</h3>
-
-                        <p>Ovelha</p>
-
-                    </div>
-
-                    <div class="info-card">
-
-                        <h3>Idade</h3>
-
-                        <p>---</p>
+                        🖤 Obsessão
 
                     </div>
 
-                    <div class="info-card grande">
+                    <div class="subpasta-card"
+                    onclick="abrirSubpasta('desejo')">
 
-                        <h3>📜 História</h3>
-
-                        <textarea
-                        id="historia-ovelha"
-                        placeholder="Escreva a história de Ovelha..."></textarea>
-
-                        <button onclick="salvarHistoria('ovelha')">
-                            Salvar História
-                        </button>
+                        🌙 Desejo
 
                     </div>
 
-                    <div class="info-card grande">
+                </div>
 
-                        <h3>📖 Livro de Memórias</h3>
+                <!-- OBSESSÃO -->
 
-                        <textarea
-                        id="nota-ovelha"
-                        placeholder="Escreva suas anotações..."></textarea>
+                <div class="subperfil" id="obsessao">
 
-                        <button onclick="salvarNota('ovelha')">
-                            Salvar Anotação
-                        </button>
+                    <h2>🖤 Obsessão</h2>
+
+                    <div class="info-grid">
+
+                        <div class="info-card">
+
+                            <h3>Nome</h3>
+
+                            <p>Obsessão</p>
+
+                        </div>
+
+                        <div class="info-card">
+
+                            <h3>Idade</h3>
+
+                            <p>---</p>
+
+                        </div>
+
+                        <div class="info-card grande">
+
+                            <h3>📜 História</h3>
+
+                            <textarea
+                            id="historia-obsessao"></textarea>
+
+                            <button
+                            onclick="salvarHistoria('obsessao')">
+
+                                Salvar História
+
+                            </button>
+
+                        </div>
+
+                        <div class="info-card grande">
+
+                            <h3>📖 Livro de Memórias</h3>
+
+                            <textarea
+                            id="nota-obsessao"></textarea>
+
+                            <button
+                            onclick="salvarNota('obsessao')">
+
+                                Salvar Anotação
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- DESEJO -->
+
+                <div class="subperfil" id="desejo">
+
+                    <h2>🌙 Desejo</h2>
+
+                    <div class="info-grid">
+
+                        <div class="info-card">
+
+                            <h3>Nome</h3>
+
+                            <p>Desejo</p>
+
+                        </div>
+
+                        <div class="info-card">
+
+                            <h3>Idade</h3>
+
+                            <p>---</p>
+
+                        </div>
+
+                        <div class="info-card grande">
+
+                            <h3>📜 História</h3>
+
+                            <textarea
+                            id="historia-desejo"></textarea>
+
+                            <button
+                            onclick="salvarHistoria('desejo')">
+
+                                Salvar História
+
+                            </button>
+
+                        </div>
+
+                        <div class="info-card grande">
+
+                            <h3>📖 Livro de Memórias</h3>
+
+                            <textarea
+                            id="nota-desejo"></textarea>
+
+                            <button
+                            onclick="salvarNota('desejo')">
+
+                                Salvar Anotação
+
+                            </button>
+
+                        </div>
 
                     </div>
 

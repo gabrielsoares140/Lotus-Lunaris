@@ -160,7 +160,9 @@ window.onload = () => {
         "astraelis",
         "ovelha",
         "sirius",
-        "lyranoctis"
+        "lyranoctis",
+        "obsessao",
+        "desejo"
 
     ];
 
@@ -202,3 +204,21 @@ window.onload = () => {
     });
 
 };
+
+function abrirSubpasta(id){
+
+    const subpastas =
+    document.querySelectorAll(
+        ".subperfil"
+    );
+
+    subpastas.forEach(p => {
+
+        p.style.display = "none";
+
+    });
+
+    document
+    .getElementById(id)
+    .style.display = "block";
+}
