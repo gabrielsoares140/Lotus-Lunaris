@@ -167,17 +167,27 @@ window.onload = () => {
         document.body.appendChild(estrela);
     }
 
-    const perfis = [
+const perfis = [
 
-        "astraelis",
-        "ovelha",
-        "sirius",
-        "lyranoctis",
-        "obsessao",
-        "desejo",
-        "aelari"
+    "astraelis",
+    "ovelha",
+    "sirius",
+    "lyranoctis",
 
-    ];
+    "obsessao",
+    "desejo",
+
+    "aelari",
+
+    "alfabeto",
+    "simbolos",
+    "pontuacao",
+    "regras",
+    "exemplos",
+    "niveis",
+    "sagrado"
+
+];
 
     perfis.forEach(nome => {
 

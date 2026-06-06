@@ -177,6 +177,21 @@
 
             </div>
 
+            <div class="portal-card aelari"
+        onclick="abrirPerfil('aelari')">
+
+            <div class="portal-icon">
+                ✦☾
+            </div>
+
+            <h2>Língua Aelari</h2>
+
+            <p>
+                Biblioteca dos Glifos
+            </p>
+
+        </div>
+
         </div>
 
         <div id="perfilContainer">
@@ -600,15 +615,10 @@
 
             </div>
 
-        </div>
-
-    </main>
-
-</div>
-
 <div class="perfil" id="aelari">
 
-    <button class="voltar"
+    <button
+    class="voltar"
     onclick="voltarSalao()">
 
         ← Voltar ao Salão
@@ -633,173 +643,389 @@
 
     </div>
 
-    <!-- ALFABETO -->
+    <!-- PASTAS -->
 
-    <div class="info-card grande">
+    <div class="subpastas">
 
-        <h2>✦ Os 26 Glifos Fundamentais</h2>
+        <div class="subpasta-card"
+        onclick="abrirSubpasta('alfabeto')">
 
-        <div class="lingua-box">
+            🔠 Alfabeto
 
-<pre>
-A 𖤓 Aris      — Nascimento
-B 𖤐 Elen      — Memória
-C 𖤔 Ilyr      — Transformação
-D 𖤕 Orun      — Equilíbrio
-E 𖤖 Ulvar     — Profundidade
-F 𖤗 Yelis     — Esperança
-G 𖤘 Aethra    — Destino
-H 𖤙 Othar     — Eternidade
-I 𖤚 Vael      — Vida
-J 𖤛 Lyr       — Luz
-K 𖤜 Nareth    — Natureza
-L 𖤝 Rhovan    — Movimento
-M 𖤞 Sareth    — Estrelas
-N 𖤟 Thoran    — Tempo
-O 𖤠 Maelis    — Memória Viva
-P 𖤡 Dareth    — Determinação
-Q 𖤢 Kaelor    — Força
-R 𖤣 Faelis    — Mudança
-S 𖤤 Helyr     — Espírito
-T 𖤥 Paelor    — Proteção
-U 𖤦 Belun     — Comunidade
-V 𖤧 Gaelis    — Crescimento
-W 𖤨 Caelor    — Criação
-X 𖤩 Zaelis    — Sabedoria
-Y 𖤪 Thaelis   — União
-Z 𖤫 Shaelor   — Mistério
-</pre>
+        </div>
+
+        <div class="subpasta-card"
+        onclick="abrirSubpasta('simbolos')">
+
+            ✦ Símbolos
+
+        </div>
+
+        <div class="subpasta-card"
+        onclick="abrirSubpasta('pontuacao')">
+
+            ◇ Pontuação
+
+        </div>
+
+        <div class="subpasta-card"
+        onclick="abrirSubpasta('regras')">
+
+            🖋 Regras
+
+        </div>
+
+        <div class="subpasta-card"
+        onclick="abrirSubpasta('exemplos')">
+
+            📚 Exemplos
+
+        </div>
+
+        <div class="subpasta-card"
+        onclick="abrirSubpasta('niveis')">
+
+            🌌 Níveis
+
+        </div>
+
+        <div class="subpasta-card"
+        onclick="abrirSubpasta('sagrado')">
+
+            👑 Símbolo Sagrado
 
         </div>
 
     </div>
 
-    <!-- SÍMBOLOS -->
+    <!-- ALFABETO -->
 
-    <div class="info-card grande">
+    <div class="subperfil" id="alfabeto">
 
-        <h2>✦ Símbolos Espirituais</h2>
+        <div class="info-card grande">
 
-<pre>
-✦ Astra      — Sagrado
-☾ Lunar      — Emoção
-❖ Vaelis     — Família
-⟡ Othir      — Destino
-⌘ Thalen     — União
-⊹ Elyr       — Ancestral
-✧ Solareth   — Lar
-⟢ Nareth     — Proteção
-☼ Aurel      — Vida
-⟣ Mirath     — Promessa
-</pre>
+            <h2>🔠 Os 26 Glifos Fundamentais</h2>
+
+            <p>
+                Cada glifo representa um som e um conceito espiritual.
+            </p>
+
+            <table class="aelari-table">
+
+                <tr>
+                    <th>Letra</th>
+                    <th>Glifo</th>
+                    <th>Nome</th>
+                    <th>Significado</th>
+                </tr>
+
+                <tr><td>A</td><td>𖤓</td><td>Aris</td><td>Nascimento</td></tr>
+                <tr><td>B</td><td>𖤐</td><td>Elen</td><td>Memória</td></tr>
+                <tr><td>C</td><td>𖤔</td><td>Ilyr</td><td>Transformação</td></tr>
+                <tr><td>D</td><td>𖤕</td><td>Orun</td><td>Equilíbrio</td></tr>
+                <tr><td>E</td><td>𖤖</td><td>Ulvar</td><td>Profundidade</td></tr>
+                <tr><td>F</td><td>𖤗</td><td>Yelis</td><td>Esperança</td></tr>
+                <tr><td>G</td><td>𖤘</td><td>Aethra</td><td>Destino</td></tr>
+                <tr><td>H</td><td>𖤙</td><td>Othar</td><td>Eternidade</td></tr>
+                <tr><td>I</td><td>𖤚</td><td>Vael</td><td>Vida</td></tr>
+                <tr><td>J</td><td>𖤛</td><td>Lyr</td><td>Luz</td></tr>
+                <tr><td>K</td><td>𖤜</td><td>Nareth</td><td>Natureza</td></tr>
+                <tr><td>L</td><td>𖤝</td><td>Rhovan</td><td>Movimento</td></tr>
+                <tr><td>M</td><td>𖤞</td><td>Sareth</td><td>Estrelas</td></tr>
+                <tr><td>N</td><td>𖤟</td><td>Thoran</td><td>Tempo</td></tr>
+                <tr><td>O</td><td>𖤠</td><td>Maelis</td><td>Memória Viva</td></tr>
+                <tr><td>P</td><td>𖤡</td><td>Dareth</td><td>Determinação</td></tr>
+                <tr><td>Q</td><td>𖤢</td><td>Kaelor</td><td>Força</td></tr>
+                <tr><td>R</td><td>𖤣</td><td>Faelis</td><td>Mudança</td></tr>
+                <tr><td>S</td><td>𖤤</td><td>Helyr</td><td>Espírito</td></tr>
+                <tr><td>T</td><td>𖤥</td><td>Paelor</td><td>Proteção</td></tr>
+                <tr><td>U</td><td>𖤦</td><td>Belun</td><td>Comunidade</td></tr>
+                <tr><td>V</td><td>𖤧</td><td>Gaelis</td><td>Crescimento</td></tr>
+                <tr><td>W</td><td>𖤨</td><td>Caelor</td><td>Criação</td></tr>
+                <tr><td>X</td><td>𖤩</td><td>Zaelis</td><td>Sabedoria</td></tr>
+                <tr><td>Y</td><td>𖤪</td><td>Thaelis</td><td>União</td></tr>
+                <tr><td>Z</td><td>𖤫</td><td>Shaelor</td><td>Mistério</td></tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- SIMBOLOS -->
+
+    <div class="subperfil" id="simbolos">
+
+        <div class="info-card grande">
+
+            <h2>✦ Símbolos Espirituais</h2>
+
+            <table class="aelari-table">
+
+                <tr>
+                    <th>Símbolo</th>
+                    <th>Nome</th>
+                    <th>Significado</th>
+                </tr>
+
+                <tr><td>✦</td><td>Astra</td><td>Sagrado</td></tr>
+                <tr><td>☾</td><td>Lunar</td><td>Emoção</td></tr>
+                <tr><td>❖</td><td>Vaelis</td><td>Família</td></tr>
+                <tr><td>⟡</td><td>Othir</td><td>Destino</td></tr>
+                <tr><td>⌘</td><td>Thalen</td><td>União</td></tr>
+                <tr><td>⊹</td><td>Elyr</td><td>Ancestral</td></tr>
+                <tr><td>✧</td><td>Solareth</td><td>Lar</td></tr>
+                <tr><td>⟢</td><td>Nareth</td><td>Proteção</td></tr>
+                <tr><td>☼</td><td>Aurel</td><td>Vida</td></tr>
+                <tr><td>⟣</td><td>Mirath</td><td>Promessa</td></tr>
+
+            </table>
+
+        </div>
 
     </div>
 
     <!-- PONTUAÇÃO -->
 
-    <div class="info-card grande">
+    <div class="subperfil" id="pontuacao">
 
-        <h2>✦ Pontuação Aelari</h2>
+        <div class="info-card grande">
 
-<pre>
-◇ Final de frase
-○ Pausa
-✦ Mudança de assunto
-⟡ Reflexão
-☾ Fim de poema
-⊹ Citação ancestral
-</pre>
+            <h2>◇ Pontuação Aelari</h2>
+
+            <table class="aelari-table">
+
+                <tr>
+                    <th>Símbolo</th>
+                    <th>Uso</th>
+                </tr>
+
+                <tr><td>◇</td><td>Final de frase</td></tr>
+                <tr><td>○</td><td>Pausa</td></tr>
+                <tr><td>✦</td><td>Mudança de assunto</td></tr>
+                <tr><td>⟡</td><td>Reflexão</td></tr>
+                <tr><td>☾</td><td>Fim de poema</td></tr>
+                <tr><td>⊹</td><td>Citação ancestral</td></tr>
+
+            </table>
+
+        </div>
 
     </div>
 
-    <!-- REGRAS -->
+        <!-- REGRAS -->
 
-    <div class="info-card grande">
+    <div class="subperfil" id="regras">
 
-        <h2>✦ Como os Glifos São Escritos</h2>
+        <div class="info-card grande">
 
-        <h3>Primeira Regra — O Fluxo</h3>
+            <h2>🖋 Como os Glifos São Escritos</h2>
 
-        <p>
-            Nenhuma letra é escrita separada.
-            Todas são conectadas como constelações.
-        </p>
+            <h3>Primeira Regra — O Fluxo</h3>
 
-        <h3>Segunda Regra — A Direção</h3>
+            <p>
+                Nenhuma letra é escrita separadamente.
+                Todas as letras se conectam formando
+                uma linha contínua, semelhante a uma
+                constelação no céu.
+            </p>
 
-        <p>
-            A escrita segue da esquerda para a direita.
-            Símbolos espirituais podem ser colocados acima das palavras.
-        </p>
+            <br>
 
-        <h3>Terceira Regra — O Peso</h3>
+            <h3>Segunda Regra — A Direção</h3>
 
-        <p>
-            Quanto mais importante a palavra,
-            mais ornamentada ela se torna.
-        </p>
+            <p>
+                A escrita segue da esquerda para a direita.
+                Símbolos espirituais podem ser posicionados
+                acima das palavras para ampliar seu significado.
+            </p>
+
+            <br>
+
+            <h3>Terceira Regra — O Peso</h3>
+
+            <p>
+                Quanto mais importante for uma palavra,
+                mais elaborada será sua escrita.
+            </p>
+
+            <br>
+
+            <div class="info-card">
+
+                <h4>Nome comum</h4>
+
+                <p style="font-size:28px;">
+                    𖤚𖤐𖤛
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="info-card">
+
+                <h4>Nome ancestral</h4>
+
+                <p style="font-size:28px;">
+                    ✦𖤚𖤐𖤛✦
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
     <!-- EXEMPLOS -->
 
-    <div class="info-card grande">
+    <div class="subperfil" id="exemplos">
 
-        <h2>✦ Exemplos de Palavras</h2>
+        <div class="info-card grande">
 
-<pre>
-Astrael
-𖤓𖤞𖤟𖤝𖤓𖤐𖤛
-"Memória das Estrelas"
+            <h2>📚 Exemplos de Palavras</h2>
 
-Elarin
-𖤐𖤛𖤓𖤝𖤔𖤜
-"Lar da Memória"
+            <table class="aelari-table">
 
-Solareth
-𖤞𖤕𖤛𖤓𖤝𖤐𖤪
-"Luz das Estrelas"
+                <tr>
+                    <th>Palavra</th>
+                    <th>Tradução</th>
+                    <th>Glifos</th>
+                </tr>
 
-Lun'vera
-𖤛𖤖𖤜𖤚𖤐𖤝𖤓
-"Aquele que traz felicidade ao lar"
-</pre>
+                <tr>
+                    <td>Astrael</td>
+                    <td>Memória das Estrelas</td>
+                    <td>𖤓𖤞𖤟𖤝𖤓𖤐𖤛</td>
+                </tr>
+
+                <tr>
+                    <td>Elarin</td>
+                    <td>Lar da Memória</td>
+                    <td>𖤐𖤛𖤓𖤝𖤔𖤜</td>
+                </tr>
+
+                <tr>
+                    <td>Solareth</td>
+                    <td>Luz das Estrelas</td>
+                    <td>𖤞𖤕𖤛𖤓𖤝𖤐𖤪</td>
+                </tr>
+
+                <tr>
+                    <td>Lun'vera</td>
+                    <td>Aquele que traz felicidade ao lar</td>
+                    <td>𖤛𖤖𖤜𖤚𖤐𖤝𖤓</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- NIVEIS -->
+
+    <div class="subperfil" id="niveis">
+
+        <div class="info-card grande">
+
+            <h2>🌌 Os Níveis de Escrita</h2>
+
+            <div class="info-card">
+
+                <h3>📜 Escrita Cotidiana</h3>
+
+                <p>
+                    Utilizada em cartas, registros
+                    e documentos do dia a dia.
+                    Simples, rápida e prática.
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="info-card">
+
+                <h3>🎭 Escrita Cerimonial</h3>
+
+                <p>
+                    Utilizada em casamentos,
+                    funerais, festivais e eventos
+                    importantes da comunidade.
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="info-card">
+
+                <h3>🌠 Escrita Celestial</h3>
+
+                <p>
+                    A forma mais rara da escrita.
+                    Utilizada apenas pelos Guardiões
+                    das Estrelas da Casa Astraelis.
+                </p>
+
+                <p>
+                    Cada letra recebe extensões
+                    semelhantes a caudas de cometas.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <!-- NÍVEIS -->
+    <!-- SIMBOLO SAGRADO -->
 
-    <div class="info-card grande">
+    <div class="subperfil" id="sagrado">
 
-        <h2>✦ Níveis de Escrita</h2>
+        <div class="info-card grande">
 
-        <p><strong>Escrita Cotidiana</strong> — Cartas e registros.</p>
+            <h2>👑 O Símbolo Mais Sagrado de Elarin</h2>
 
-        <p><strong>Escrita Cerimonial</strong> — Casamentos, funerais e festivais.</p>
+            <div style="text-align:center;">
 
-        <p><strong>Escrita Celestial</strong> — Utilizada apenas pelos Guardiões das Estrelas da Casa Astraelis.</p>
+                <h1 style="font-size:60px;">
+                    ✦☾❖✧
+                </h1>
+
+            </div>
+
+            <h3>Astra Lun Vaelis</h3>
+
+            <p>
+                "Sob as estrelas,
+                encontramos nosso lar."
+            </p>
+
+            <br>
+
+            <p>
+                Este símbolo aparece na entrada
+                da aldeia, em monumentos,
+                registros históricos e bandeiras.
+            </p>
+
+            <p>
+                Para os habitantes de Elarin,
+                ele representa pertencimento,
+                união e a memória de todos
+                aqueles que vieram antes.
+            </p>
+
+        </div>
 
     </div>
 
-    <!-- SÍMBOLO SAGRADO -->
+</div>
+        </div>
 
-    <div class="info-card grande">
-
-        <h2>✦☾❖✧</h2>
-
-        <h3>Astra Lun Vaelis</h3>
-
-        <p>
-            "Sob as estrelas, encontramos nosso lar."
-        </p>
-
-        <p>
-            O símbolo mais sagrado de Elarin,
-            presente nos monumentos,
-            registros históricos e festivais.
-        </p>
-
-    </div>
+    </main>
 
 </div>
 
