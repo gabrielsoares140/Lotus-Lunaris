@@ -66,6 +66,18 @@ function abrirPerfil(id){
     perfil.classList.add("ativo");
 
     perfil.style.display = "block";
+
+    /* Fecha as subpastas ao trocar de perfil */
+
+    const subpastas =
+    document.querySelectorAll(".subperfil");
+
+    subpastas.forEach(sub => {
+
+        sub.style.display = "none";
+
+    });
+
 }
 
 function voltarSalao(){
@@ -162,7 +174,8 @@ window.onload = () => {
         "sirius",
         "lyranoctis",
         "obsessao",
-        "desejo"
+        "desejo",
+        "aelari"
 
     ];
 

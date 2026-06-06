@@ -531,8 +531,12 @@ body{
 .subpastas{
 
     display:flex;
+
     gap:20px;
+
     margin-bottom:30px;
+
+    flex-wrap:wrap;
 }
 
 .subpasta-card{
@@ -544,19 +548,22 @@ body{
     background:
     rgba(255,255,255,.05);
 
+    border:
+    1px solid rgba(255,255,255,.1);
+
     color:white;
 
     cursor:pointer;
 
     transition:.3s;
 
-    border:
-    1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(15px);
 }
 
 .subpasta-card:hover{
 
-    transform:translateY(-5px);
+    transform:
+    translateY(-5px);
 
     box-shadow:
     0 0 20px rgba(125,90,255,.7);
@@ -567,4 +574,45 @@ body{
     display:none;
 
     animation:surgir .5s ease;
+}
+
+.subperfil h2{
+
+    color:white;
+
+    margin-bottom:20px;
+
+    text-shadow:
+    0 0 10px #7d5aff;
+}
+
+.lingua-box{
+
+    background:rgba(255,255,255,.04);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin-top:15px;
+
+    overflow:auto;
+}
+
+.lingua-box pre{
+
+    white-space:pre-wrap;
+
+    color:white;
+
+    line-height:1.8;
+}
+
+.info-card pre{
+
+    color:#d9d4ff;
+
+    line-height:1.8;
+
+    white-space:pre-wrap;
 }
