@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Família Lunaris</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<!-- LOGIN -->
+
+<div id="loginBox" class="login-container">
+
+    <div class="login-card">
+
+        <h1>✦ Família Lunaris ✦</h1>
+
+        <p>
+            Somente aqueles guiados pelas estrelas
+            podem acessar o Arquivo Celestial.
+        </p>
+
+        <input
+            type="text"
+            id="user"
+            placeholder="Usuário"
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Senha"
+        >
+
+        <button onclick="login()">
+            Entrar
+        </button>
+
+        <p id="loginMsg"></p>
+
+    </div>
+
+</div>
+
+<!-- LOADING -->
+
+<div id="loadingScreen">
+
+    <div class="loading-star">
+        ✦
+    </div>
+
+    <h1>FAMÍLIA LUNARIS</h1>
+
+    <p>Conectando ao Arquivo Celestial...</p>
+
+</div>
+
+<!-- SITE -->
+
+<div id="mainBox" class="hidden">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            ✦ LUNARIS
+        </div>
+
+        <ul>
+
+            <li onclick="abrirPerfil('astraelis')">
+                Astraelis
+            </li>
+
+            <li onclick="abrirPerfil('ovelha')">
+                Ovelha
+            </li>
+
+            <li onclick="abrirPerfil('sirius')">
+                Sirius
+            </li>
+
+            <li onclick="abrirPerfil('lyranoctis')">
+                Lyra & Noctis
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="hero">
+
+            <h1>✦ Salão Celestial ✦</h1>
+
+            <p>
+                Escolha uma estrela para acessar seus registros.
+            </p>
+
+        </div>
+
+        <!-- SALÃO CELESTIAL -->
+
+        <div id="salaoCelestial">
+
+            <div class="portal-card"
+            onclick="abrirPerfil('astraelis')">
+
+                <div class="portal-icon">
+                    ✦
+                </div>
+
+                <h2>Astraelis</h2>
+
+                <p>
+                    Guardiã das Constelações
+                </p>
+
+            </div>
+
+            <div class="portal-card"
+            onclick="abrirPerfil('ovelha')">
+
+                <div class="portal-icon">
+                    ☾
+                </div>
+
+                <h2>Ovelha</h2>
+
+                <p>
+                    A Alma Tranquila
+                </p>
+
+            </div>
+
+            <div class="portal-card"
+            onclick="abrirPerfil('sirius')">
+
+                <div class="portal-icon">
+                    ★
+                </div>
+
+                <h2>Sirius</h2>
+
+                <p>
+                    A Estrela Azul
+                </p>
+
+            </div>
+
+            <div class="portal-card"
+            onclick="abrirPerfil('lyranoctis')">
+
+                <div class="portal-icon">
+                    ✧
+                </div>
+
+                <h2>Lyra & Noctis</h2>
+
+                <p>
+                    Almas Gêmeas da Noite
+                </p>
+
+            </div>
+
+        </div>
+
+        <div id="perfilContainer">
+
+            <!-- ASTRAELIS -->
+
+            <div class="perfil" id="astraelis">
+
+                <button
+                class="voltar"
+                onclick="voltarSalao()">
+
+                    ← Voltar ao Salão
+
+                </button>
+
+                <div class="perfil-header">
+
+                    <div class="avatar">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <h1>Astraelis</h1>
+
+                        <p>
+                            Guardiã das Constelações
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+
+                        <h3>Nome</h3>
+
+                        <p>Astraelis</p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>Idade</h3>
+
+                        <p>---</p>
+
+                    </div>
+
+                    <div class="info-card grande">
+
+                        <h3>📜 História</h3>
+
+                        <textarea
+                        id="historia-astraelis"
+                        placeholder="Escreva a história de Astraelis..."></textarea>
+
+                        <button onclick="salvarHistoria('astraelis')">
+                            Salvar História
+                        </button>
+                        
+                    </div>
+
+                    <div class="info-card grande">
+
+                    <h3>📖 Livro de Memórias</h3>
+
+                    <textarea
+                    id="nota-astraelis"
+                    placeholder="Escreva suas anotações..."></textarea>
+
+                    <button onclick="salvarNota('astraelis')">
+                        Salvar Anotação
+                    </button>
+
+                </div>
+
+                </div>
+
+            </div>
+            <!-- OVELHA -->
+
+            <div class="perfil" id="ovelha">
+
+                <button
+                class="voltar"
+                onclick="voltarSalao()">
+
+                    ← Voltar ao Salão
+
+                </button>
+
+                <div class="perfil-header">
+
+                    <div class="avatar">
+                        ☾
+                    </div>
+
+                    <div>
+
+                        <h1>Ovelha</h1>
+
+                        <p>
+                            A Alma Tranquila
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+
+                        <h3>Nome</h3>
+
+                        <p>Ovelha</p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>Idade</h3>
+
+                        <p>---</p>
+
+                    </div>
+
+                    <div class="info-card grande">
+
+                        <h3>📜 História</h3>
+
+                        <textarea
+                        id="historia-ovelha"
+                        placeholder="Escreva a história de Ovelha..."></textarea>
+
+                        <button onclick="salvarHistoria('ovelha')">
+                            Salvar História
+                        </button>
+
+                    </div>
+
+                    <div class="info-card grande">
+
+                        <h3>📖 Livro de Memórias</h3>
+
+                        <textarea
+                        id="nota-ovelha"
+                        placeholder="Escreva suas anotações..."></textarea>
+
+                        <button onclick="salvarNota('ovelha')">
+                            Salvar Anotação
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SIRIUS -->
+
+            <div class="perfil" id="sirius">
+
+                <button
+                class="voltar"
+                onclick="voltarSalao()">
+
+                    ← Voltar ao Salão
+
+                </button>
+
+                <div class="perfil-header">
+
+                    <div class="avatar">
+                        ★
+                    </div>
+
+                    <div>
+
+                        <h1>Sirius</h1>
+
+                        <p>
+                            A Estrela Azul
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+
+                        <h3>Nome</h3>
+
+                        <p>Sirius</p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>Idade</h3>
+
+                        <p>---</p>
+
+                    </div>
+
+                    <div class="info-card grande">
+
+                        <h3>📜 História</h3>
+
+                        <textarea
+                        id="historia-sirius"
+                        placeholder="Escreva a história de Sirius..."></textarea>
+
+                        <button onclick="salvarHistoria('sirius')">
+                            Salvar História
+                        </button>
+
+                    </div>
+
+                    <div class="info-card grande">
+
+                        <h3>📖 Livro de Memórias</h3>
+
+                        <textarea
+                        id="nota-sirius"
+                        placeholder="Escreva suas anotações..."></textarea>
+
+                        <button onclick="salvarNota('sirius')">
+                            Salvar Anotação
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- LYRA & NOCTIS -->
+
+            <div class="perfil" id="lyranoctis">
+
+                <button
+                class="voltar"
+                onclick="voltarSalao()">
+
+                    ← Voltar ao Salão
+
+                </button>
+
+                <div class="perfil-header">
+
+                    <div class="avatar">
+                        ✧
+                    </div>
+
+                    <div>
+
+                        <h1>Lyra & Noctis</h1>
+
+                        <p>
+                            As Almas Gêmeas da Noite
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+
+                        <h3>Nome</h3>
+
+                        <p>Lyra & Noctis</p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>Idade</h3>
+
+                        <p>---</p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>Relação</h3>
+
+                        <p>
+                            Ligados pelo mesmo destino.
+                        </p>
+
+                    </div>
+
+                   <div class="info-card grande">
+
+                        <h3>📜 História</h3>
+
+                        <textarea
+                        id="historia-lyranoctis"
+                        placeholder="Escreva a história de Lyra e Noctis..."></textarea>
+
+                        <button onclick="salvarHistoria('lyranoctis')">
+                            Salvar História
+                        </button>
+
+                    </div>
+
+                    <div class="info-card grande">
+
+                        <h3>📖 Livro de Memórias Compartilhado</h3>
+
+                        <textarea
+                        id="nota-lyranoctis"
+                        placeholder="Escreva suas anotações..."></textarea>
+
+                        <button onclick="salvarNota('lyranoctis')">
+                            Salvar Anotação
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
