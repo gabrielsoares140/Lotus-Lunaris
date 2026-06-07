@@ -185,7 +185,8 @@ const perfis = [
     "regras",
     "exemplos",
     "niveis",
-    "sagrado"
+    "sagrado",
+    "tradutor"
 
 ];
 
@@ -244,4 +245,165 @@ function abrirSubpasta(id){
     document
     .getElementById(id)
     .style.display = "block";
+}
+
+let modoTraducao = "normal";
+
+function traduzirTexto(){
+
+    if(modoTraducao === "normal"){
+
+        traduzirParaAelari();
+
+    }else{
+
+        traduzirParaPortugues();
+
+    }
+}
+
+function traduzirParaAelari(){
+
+    const texto =
+    document.getElementById(
+        "textoEntrada"
+    ).value.toUpperCase();
+
+    const glifos = {
+
+        A:"𖤓",
+        B:"𖤐",
+        C:"𖤔",
+        D:"𖤕",
+        E:"𖤖",
+        F:"𖤗",
+        G:"𖤘",
+        H:"𖤙",
+        I:"𖤚",
+        J:"𖤛",
+        K:"𖤜",
+        L:"𖤝",
+        M:"𖤞",
+        N:"𖤟",
+        O:"𖤠",
+        P:"𖤡",
+        Q:"𖤢",
+        R:"𖤣",
+        S:"𖤤",
+        T:"𖤥",
+        U:"𖤦",
+        V:"𖤧",
+        W:"𖤨",
+        X:"𖤩",
+        Y:"𖤪",
+        Z:"𖤫",
+        " ":" ○ "
+    };
+
+    let resultado = "";
+
+    for(let letra of texto){
+
+        resultado +=
+        glifos[letra] || letra;
+
+    }
+
+    document
+    .getElementById("textoSaida")
+    .value = resultado;
+
+    document
+    .getElementById("textoSaida")
+    .style.fontSize = "28px";
+}
+
+function traduzirParaPortugues(){
+
+    let texto =
+    document.getElementById(
+        "textoEntrada"
+    ).value;
+
+    const letras = {
+
+        "𖤓":"A",
+        "𖤐":"B",
+        "𖤔":"C",
+        "𖤕":"D",
+        "𖤖":"E",
+        "𖤗":"F",
+        "𖤘":"G",
+        "𖤙":"H",
+        "𖤚":"I",
+        "𖤛":"J",
+        "𖤜":"K",
+        "𖤝":"L",
+        "𖤞":"M",
+        "𖤟":"N",
+        "𖤠":"O",
+        "𖤡":"P",
+        "𖤢":"Q",
+        "𖤣":"R",
+        "𖤤":"S",
+        "𖤥":"T",
+        "𖤦":"U",
+        "𖤧":"V",
+        "𖤨":"W",
+        "𖤩":"X",
+        "𖤪":"Y",
+        "𖤫":"Z"
+    };
+
+    let resultado = texto;
+
+    for(const glifo in letras){
+
+        resultado =
+        resultado.split(glifo)
+        .join(letras[glifo]);
+
+    }
+
+    resultado =
+    resultado.split("○")
+    .join(" ");
+
+    document
+    .getElementById("textoSaida")
+    .value = resultado;
+}
+
+function inverterTradutor(){
+
+    const entrada =
+    document.getElementById("textoEntrada");
+
+    const saida =
+    document.getElementById("textoSaida");
+
+    if(modoTraducao === "normal"){
+
+        modoTraducao = "reverso";
+
+        document.getElementById("tituloEntrada")
+        .innerText = "Aelari";
+
+        document.getElementById("tituloSaida")
+        .innerText = "Português";
+
+    }else{
+
+        modoTraducao = "normal";
+
+        document.getElementById("tituloEntrada")
+        .innerText = "Português";
+
+        document.getElementById("tituloSaida")
+        .innerText = "Aelari";
+
+    }
+
+    entrada.value = saida.value;
+    traduzirTexto();
 }
