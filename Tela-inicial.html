@@ -736,6 +736,13 @@
 
         </div>
 
+        <div class="subpasta-card"
+        onclick="abrirSubpasta('tradutor')">
+
+            ✦ Tradutor Aelari
+
+        </div>
+
     </div>
 
     <!-- ALFABETO -->
@@ -1062,6 +1069,49 @@
 
     </div>
 
+    <div class="subperfil pagina-aelari" id="tradutor">
+
+    <h2>✦ Tradutor Aelari</h2>
+
+    <div class="info-grid">
+
+        <div class="info-card grande">
+
+            <h3 id="tituloEntrada">
+                Português
+            </h3>
+
+            <textarea
+            id="textoEntrada"
+            oninput="traduzirTexto()"
+            placeholder="Digite seu texto..."></textarea>
+
+        </div>
+
+        <div class="info-card grande">
+
+            <h3 id="tituloSaida">
+                Aelari
+            </h3>
+
+            <textarea
+            id="textoSaida"
+            readonly></textarea>
+
+        </div>
+
+    </div>
+
+    <!-- COLOQUE AQUI -->
+
+    <div class="tradutor-controles">
+
+        <button onclick="inverterTradutor()">
+            ⇄ Inverter Tradução
+        </button>
+
+    </div>
+
 </div>
         </div>
 
@@ -1071,5 +1121,5 @@
 
 <script src="script.js"></script>
 
-</body>
+</body>                                                                                                                                                                            
 </html>
